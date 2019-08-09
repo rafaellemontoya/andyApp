@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#00549d</color>-->
+    <!--<color name="colorPrimary">#fb8868</color>-->
+    <color name="colorPrimary">#039be5</color>
+    <color name="verde_boton">#00aa4f</color>
+    <color name="azulTransparente">#9900378a</color>
+    <color name="colorPrimaryDark">#039be5</color>
+    <color name="colorAccent">#009ada</color>
+    <color name="gris_claro">#BBDEFB</color>
+    <color name="blanco">#fff</color>
+    <color name="negro">#000</color>
+    <color name="boton_rojo">#F44336</color>
+    <color name="verde">#70ca63</color>
+    <color name="clasificacion1">#eea6a6</color>
+    <color name="clasificacion2">#a6eec6</color>
+    <color name="clasificacion3">#a6c8ee</color>
+    <color name="clasificacion4">#b4a6ee</color>
+    <color name="advertencia">#FF9800</color>
+    <color name="letra">#666666</color>
+    <color name="amarillo">#FFEB3B</color>
+
+
+
+    <color name="fondo">#fff</color>
+
+    <color name="card_text_color">#FFFFFF</color>
+    <color name="card_label_color">#D4D9DC</color>
+    <color name="card_cvv_color">#383838</color>
+    <color name="CTA_text">#FFFFFF</color>
+    <color name="CTA_bg">#32C25E</color>
+
+</resources>

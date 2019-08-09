@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/qStatusImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                />
+            <TextView
+                android:id="@+id/nombre_producto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:text="TextView"
+                android:gravity="center"
+                android:textSize="25dp"
+                />
+            <View
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:background="@color/colorAccent"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/descripcion_producto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="TextView"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:text="Instrucciones Especiales"
+                android:background="@color/gris_claro"
+                android:padding="10dp"
+                />
+            <EditText
+                android:id="@+id/et_nota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escribe una nota..."
+                android:layout_margin="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Selecciona las unidades"
+                android:background="@color/gris_claro"
+                android:padding="10dp"
+                />
+
+            <NumberPicker
+                android:id="@+id/unidades_producto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/btn_agregar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Añadir al carrito"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/blanco"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

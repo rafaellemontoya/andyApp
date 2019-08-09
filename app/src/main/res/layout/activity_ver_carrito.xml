@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text="@string/titulo_ver_carrito"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/id_baner_admob">
+            </com.google.android.gms.ads.AdView>
+            <com.myt.andyapp.Model.NonScrollListView
+                android:id="@+id/lv_productos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/total"
+                    android:textSize="18dp"
+                    android:gravity="right"
+                    android:textColor="@color/colorPrimaryDark"/>
+                <TextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blanco"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:text="@string/instrucciones_direccion"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7">
+
+                <EditText
+                    android:id="@+id/et_direccion_entrega"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Escribe la direccion de entrega"
+                    android:inputType="text"
+                    android:layout_margin="20dp"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blanco"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:text="@string/instrucciones_forma_pago"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dp"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/forma_pago"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <RadioButton
+                    android:layout_gravity="center"
+                    android:id="@+id/radio_efectivo"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/ic_billete"
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Efectivo"
+                    android:textSize="18dp"/>
+
+
+
+                <RadioButton
+                    android:id="@+id/radio_credito"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tarjeta de crédito o débito"
+                    android:drawableLeft="@drawable/iconspartedelanteradetarjetabancaria"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="18dp"/>
+                <RadioButton
+                    android:id="@+id/radio_transferencia"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Depósito"
+                    android:drawableLeft="@drawable/deposito"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="18dp"/>
+
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_confirmar_pedido"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/realizar_pedido"
+                android:onClick="agregarProducto"/>
+
+            <Button
+                android:id="@+id/btn_cancelar_pedido"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cancelar_pedido"/>
+            <Button
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/btn_regresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/atras"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/boton"
+                android:onClick="regresar"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

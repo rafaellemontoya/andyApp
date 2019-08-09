@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">AndyApp</string>
+
+    <string name="title_activity_principal">Principal</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="total">Total</string>
+    <string name="realizar_pedido">Realizar pedido</string>
+    <string name="cancelar_pedido">Eliminar pedido</string>
+    <string name="instrucciones_direccion">Escribe el lugar de entrega</string>
+    <string name="instrucciones_forma_pago">Selecciona la forma de pago</string>
+    <string name="atras">Regresar</string>
+    <string name="titulo_ver_carrito">Resumen de compra</string>
+    <string name="calificar">Calificar</string>
+    <string name="forma_pago">Forma de pago</string>
+    <string name="subir_comprobante">Comprobante</string>
+    <string name="productos_solicitados">Productos solicitados</string>
+    <string name="repartidor">Repartidor</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="seccion_entrega">Finalización</string>
+    <string name="btn_entrega">Recibir</string>
+    <string name="instrucciones_check">Da click en el cuadro de la izquierda para indicar que un tinaco tiene algún defecto</string>
+    <string name="desarrollo">Desarrollado por M y T</string>
+    <string name="renta">Renta una app</string>
+    <integer name="btnplusview">1</integer>
+    <integer name="btnpluspos">2</integer>
+    <string name="advertencia_completar">El monto total será de acuerdo al número de unidades que se utilicen para completar el pedido</string>
+    <string name="instrucciones_calificar">Por favor califica a tu repartidor deslizando el dedo sobre las estrellas y nuestros productos, recuerda que con ésto nos ayudas a brindarte un mejor servicio.</string>
+    <string name="titulo_seleccionar_tarjeta">Selecciona tu tarjeta</string>
+    <string name="resumen_pedido">Resúmen del pedido</string>
+    <string name="sin_tarjetas">No tienes ninguna tarjeta registrada</string>
+    <string name="formas_pago">Administrar tarjetas</string>
+    <string name="historial">Historial de pedidos</string>
+    <string name="sin_calificacion">No has calificado</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="prompt_nombre">Nombre</string>
+    <string name="prompt_telefono">Teléfono</string>
+    <string name="contacto">Contacto</string>
+
+
+
+
+    <string name="card_header">NFN CARD</string>
+    <string name="card_number_sample">XXXX XXXX XXXX XXXX</string>
+    <string name="card_validity_label">VÁLIDO</string>
+    <string name="card_validity_sample">MM/YY</string>
+    <string name="card_name_sample">NOMBRE DEL TITULAR</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="card_holders_name">Nombre del titular</string>
+    <string name="card_number">Número de la tarjeta</string>
+    <string name="card_validity">Válido hasta</string>
+    <string name="card_cvv">CVV/CVC Número</string>
+
+    <!--CONEKTA-->
+    <string name="public_key">key_LuH3qP8hZxz6frsyzxX6HrQ</string>
+    <string name="concepto_pago">Compra en M y T</string>
+
+    <!--ADMOB-->
+    <string name="id_aplicacion_admob">ca-app-pub-1530869626121667~9575234510</string>
+    <string name="id_baner_admob">ca-app-pub-1530869626121667/6565927796</string>
+    <string name="id_intersticial_admob">ca-app-pub-1530869626121667/9305012440</string>
+
+    <!--VARIABLES -->
+    <string name="telefono_negocio">tel:5951091376</string>
+    <string name="prompt_horario">9:00 a 23:00</string>
+
+
+</resources>

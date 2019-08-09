@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:orderInCategory="101"
+        app:showAsAction="always"
+        android:title="Menu" >
+        <menu>
+
+            <item
+                android:id="@+id/horario"
+                android:orderInCategory="100"
+                android:title="@string/prompt_horario"
+                android:icon="@drawable/horario"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/historial"
+                android:orderInCategory="100"
+                android:title="@string/historial"
+                android:icon="@drawable/historial"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/telefono"
+                android:orderInCategory="100"
+                android:title="@string/contacto"
+                android:icon="@drawable/telefono"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/logout"
+                android:orderInCategory="100"
+                android:title="@string/logout"
+                android:icon="@drawable/apagar"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_myt"
+                android:orderInCategory="100"
+                android:title="@string/renta"
+                android:icon="@drawable/logomyt"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+</menu>
